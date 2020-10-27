@@ -33,7 +33,9 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClInclude Include="ApprovalTests.v.8.9.2.hpp" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameRunner.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +46,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="GameRunner.cpp" />
+    <ClCompile Include="GoldenMasterTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
