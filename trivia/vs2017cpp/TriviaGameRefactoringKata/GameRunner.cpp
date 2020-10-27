@@ -7,7 +7,7 @@ static bool notAWinner;
 int main()
 {
 
-	Game aGame;
+	Game aGame(std::cout);
 
 	aGame.add("Chet");
 	aGame.add("Pat");

@@ -12,7 +12,7 @@
 
 using namespace std;
 
-Game::Game() : places{}, purses{}, currentPlayer(0){
+Game::Game(std::ostream& out) : out(std::cout), places{}, purses{}, currentPlayer(0){
 	for (int i = 0; i < 50; i++)
 	{
 		ostringstream oss(ostringstream::out);
