@@ -4,10 +4,10 @@
 
 static bool notAWinner;
 
-int main()
+int run(std::ostream& out)
 {
 
-	Game aGame(std::cout);
+	Game aGame(out);
 
 	aGame.add("Chet");
 	aGame.add("Pat");
@@ -27,5 +27,14 @@ int main()
 			notAWinner = aGame.wasCorrectlyAnswered();
 		}
 	} while (notAWinner);
+
+	return 0;
+
+}
+
+int main()
+{
+
+	run(std::cout);
 
 }
