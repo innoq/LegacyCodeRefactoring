@@ -1,13 +1,14 @@
 #include "pch.h"
+#include "GameRunner.h"
 #include <stdlib.h>
 #include "Game.h"
 
 static bool notAWinner;
 
-int run(std::ostream& out)
+int run()
 {
 
-	Game aGame(out);
+	Game aGame;
 
 	aGame.add("Chet");
 	aGame.add("Pat");
@@ -32,9 +33,9 @@ int run(std::ostream& out)
 
 }
 
-int main()
-{
-
-	run(std::cout);
-
-}
+// int main()
+// {
+//
+//	run(std::cout);
+//
+// }

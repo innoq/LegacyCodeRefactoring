@@ -9,7 +9,7 @@ using namespace std;
 class Game {
 
 private:
-	std::ostream& out;
+
 	vector<string> players;
 
 	int places[6];
@@ -26,7 +26,7 @@ private:
 	bool isGettingOutOfPenaltyBox;
 
 public:
-	Game(std::ostream & out);
+	Game();
 	string createRockQuestion(int index);
 	bool isPlayable();
 	bool add(string playerName);
