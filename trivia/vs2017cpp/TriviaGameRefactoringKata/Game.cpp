@@ -9,12 +9,18 @@
 #include <stdlib.h>
 #include <iostream>
 #include <sstream>
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
 Game::Game(): places{}, purses{}, currentPlayer(0){
 	for (int i = 0; i < 50; i++)
 	{
+
+		// SAFETY FIRST: don't overheat embedded device
+		std::this_thread::sleep_for(std::chrono::milliseconds(200));
+
 		ostringstream oss(ostringstream::out);
 		oss << "Pop Question " << i;
 
