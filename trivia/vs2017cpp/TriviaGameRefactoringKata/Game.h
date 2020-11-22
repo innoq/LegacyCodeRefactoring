@@ -36,9 +36,9 @@ public:
 
 private:
 	void askQuestion();
-	string currentCategory();
 
 public:
+	string currentCategory();
 	bool wasCorrectlyAnswered();
 	bool wrongAnswer();
 

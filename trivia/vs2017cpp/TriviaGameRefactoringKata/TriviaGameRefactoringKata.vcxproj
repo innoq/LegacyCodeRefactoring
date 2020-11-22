@@ -47,6 +47,7 @@
     </ClCompile>
     <ClCompile Include="GameRunner.cpp" />
     <ClCompile Include="GoldenMasterTest.cpp" />
+    <ClCompile Include="MicroTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
